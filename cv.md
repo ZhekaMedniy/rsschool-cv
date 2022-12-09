@@ -26,3 +26,10 @@ Worked as a tiler for 10+ years. I have achieved perfection in my craft, and now
 
 ## Skills
 
+* HTML
+
+* CSS
+
+* VS-Code
+
+* GitHub
