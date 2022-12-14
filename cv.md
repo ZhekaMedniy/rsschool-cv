@@ -1,7 +1,7 @@
 
 # Evgeniy Plaksin
 
-![photo](img/IMG_2657.JPG)
+![photo](assets/img/IMG_2657.JPG)
 
 *********
 

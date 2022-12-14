@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+
+@import "styles/nullstyle";
+
+body {
+    font-family: 'Comfortaa';
+    color: rgb(155, 152, 152);
+    background: #171b1b;
+    font-size: 18px;
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+    h2 {
+        margin: 0 0 50px 80px;
+        font-size: 24px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    padding: 0 0 80px;
+}
+
+.menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    .menu-item {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        &:hover {
+            cursor: pointer;
+            & span {
+                color: rgb(180, 235, 255);
+                background-color: rgba(180, 235, 255, 0.2);
+                box-shadow: 0 0 50px 25px rgba(180, 235, 255, 0.256);
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
+
+header {
+    padding: 100px 0 0;
+    h1 {
+        margin: 0 0 50px 80px;
+    }
+    .photo {
+        margin: 0 auto;
+        box-shadow: 0 0 40px 10px rgba(3, 2, 2, 1);
+        width: 70%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+main {
+    flex-grow: 1;
+
+    pre {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 30px 0 15px;
+        background-color: #272c2e;
+        border-radius: 10px;
+    }
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    .created {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .year {
+            padding-right: 7px;
+        }
+        .gh-icon {
+            width: 30px;
+            margin: 10px;
+            transform: translateY(-3px);
+        }
+    }
+    .footer-logo {
+        width: 100px;
+        &:hover {
+            background-color: rgba(180, 235, 255, 0.2);
+            box-shadow: 0 0 50px 25px rgba(180, 235, 255, 0.256);
+            transition-duration: 0.3s;
+        }
+    }
+    .gh {
+        color: rgb(155, 152, 152);
+        border-bottom: 2px solid rgb(155, 152, 152);
+        &:hover {
+            color: rgb(180, 235, 255);
+            border-bottom: 2px solid rgb(180, 235, 255);
+            background-color: rgba(180, 235, 255, 0.2);
+            box-shadow: 0 0 50px 25px rgba(180, 235, 255, 0.256);
+            transition-duration: 0.3s;
+        }
+    }
+}
