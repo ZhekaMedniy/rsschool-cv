@@ -7,6 +7,9 @@ body {
     color: rgb(155, 152, 152);
     background: #171b1b;
     font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 300;
     h1 {
         font-size: 36px;
         font-weight: 700;
@@ -14,12 +17,13 @@ body {
     h2 {
         margin: 0 0 50px 80px;
         font-size: 24px;
+        font-weight: 700;
     }
 }
 
 .wrapper {
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1130px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -27,9 +31,20 @@ body {
 
 .container {
     padding: 0 0 80px;
+    margin: 0 25px;
+}
+
+.nav {
+    position: fixed;
+    background-color: #171b1b;
+    width: 100%;
+    box-shadow: 0 0 15px 2px rgba(3, 2, 2, 1);
+    z-index: 5;
 }
 
 .menu {
+    max-width: 1100px;
+    margin: 0 auto;
     height: 80px;
     display: flex;
     justify-content: space-around;
@@ -51,7 +66,7 @@ body {
 }
 
 header {
-    padding: 100px 0 0;
+    padding: 150px 0 0;
     h1 {
         margin: 0 0 50px 80px;
     }
@@ -67,7 +82,6 @@ header {
 
 main {
     flex-grow: 1;
-
     pre {
         max-width: 1000px;
         margin: 0 auto;
@@ -75,11 +89,82 @@ main {
         background-color: #272c2e;
         border-radius: 10px;
     }
+    .about p {
+        font-weight: 300;
+    }
+    .project {
+        &-a {
+            color: rgb(180, 235, 255);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+    }
+}
+
+.list li {
+    display: flex;
+    text-align: right;
+    align-items: center;
+    .skills-title {
+        width: 150px;
+        text-align: right;
+        margin-right: 20px;
+    }
+    .skills-lvl {
+        transform: translateY(-1px);
+        width: 75%;
+        height: 14px;
+        border-radius: 7px;
+        background-color: #272c2e;
+        .lvl-done {
+            height: 100%;
+            border-radius: 10px;
+            background-color: rgb(180, 235, 255);
+            box-shadow: 0 0 5px 2px rgba(180, 235, 255, 0.5);
+        }
+    }
+}
+.list li:nth-child(1) {
+    .lvl-done {
+        width: 70%;
+    }
+}
+.list li:nth-child(2) {
+    .lvl-done {
+        width: 55%;
+    }
+}
+.list li:nth-child(3) {
+    .lvl-done {
+        width: 85%;
+    }
+}
+.list li:nth-child(4) {
+    .lvl-done {
+        width: 65%;
+    }
+}
+.list li:nth-child(5) {
+    .lvl-done {
+        width: 80%;
+    }
+}
+.list li:nth-child(6) {
+    .lvl-done {
+        width: 95%;
+    }
+}
+.list li:nth-child(7) {
+    .lvl-done {
+        width: 2%;
+    }
 }
 
 
 
+
 .footer {
+    border-top: 1px solid rgb(155, 152, 152);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,6 +184,7 @@ main {
     }
     .footer-logo {
         width: 100px;
+        margin-right: 15px;
         &:hover {
             background-color: rgba(180, 235, 255, 0.2);
             box-shadow: 0 0 50px 25px rgba(180, 235, 255, 0.256);
