@@ -88,6 +88,10 @@ h6 {
 }
 
 /*--------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Comfortaa";
   color: rgb(155, 152, 152);
@@ -189,6 +193,11 @@ main .project-a {
   text-decoration: underline;
   font-weight: 500;
 }
+main a {
+  color: rgb(99, 213, 255);
+  text-decoration: underline;
+  font-weight: 500;
+}
 
 .list li {
   display: flex;
@@ -239,7 +248,7 @@ main .project-a {
 }
 
 .list li:nth-child(7) .lvl-done {
-  width: 2%;
+  width: 50%;
 }
 
 .contacts-list a {
