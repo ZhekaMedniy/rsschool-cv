@@ -2,6 +2,10 @@
 
 @import "styles/nullstyle";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Comfortaa';
     color: rgb(155, 152, 152);
@@ -104,6 +108,12 @@ main {
             text-decoration: underline;
             font-weight: 500;
         }
+
+    }
+    a {
+        color: rgb(99, 213, 255);
+        text-decoration: underline;
+        font-weight: 500;
     }
 }
 
@@ -162,7 +172,7 @@ main {
 }
 .list li:nth-child(7) {
     .lvl-done {
-        width: 2%;
+        width: 50%;
     }
 }
 
